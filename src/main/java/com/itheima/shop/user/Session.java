@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /*****
- * @Author: http://www.itheima.com
+ * @Author: http://www.itheima.com 用于测试
  * @Description: com.itheima.shop.user.Session
  ****/
 //共享的用户信息

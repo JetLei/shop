@@ -21,23 +21,23 @@ public class VipOrderMoney extends DecoratorMoneySum {
     private StrategyFactory strategyFactory;
 
     //价格计算
-    @Override
-    public void money(Order order) {
-        //调用被增强的对象方法
-        super.money(order);
-
-        //增强
-        vipMoney(order);
-    }
+//    @Override
+//    public void money(Order order) {
+//        //调用被增强的对象方法
+//        super.money(order);
+//
+//        //增强
+//        vipMoney(order);
+//    }
 
     //Vip价格运算
-    public void vipMoney(Order order){
-        //order.setPaymoney(order.getPaymoney()-5);
-        //获取用户等级
-        Integer level = sessionThreadLocal.get().getLevel();
-        //获取价格优惠策略
-        VipMoney vipMoney = strategyFactory.get(level);
-        Integer payMoney = vipMoney.money(order.getPaymoney());
-        order.setPaymoney(payMoney);
-    }
+//    public void vipMoney(Order order){
+//        //order.setPaymoney(order.getPaymoney()-5);
+//        //获取用户等级
+//        Integer level = sessionThreadLocal.get().getLevel();
+//        //获取价格优惠策略
+//        VipMoney vipMoney = strategyFactory.get(level);
+//        Integer payMoney = vipMoney.money(order.getPaymoney());
+//        order.setPaymoney(payMoney);
+//    }
 }
